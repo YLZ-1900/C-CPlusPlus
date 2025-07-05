@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "函数模板和类模板", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C++封装、继承、多态", "封装、继承、多态\C++Mic.vcxproj", "{F89B9CAF-AAFE-4927-8871-03614B1F5E52}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "重载、重写、重定义", "重载、重写、重定义\重载、重写、重定义.vcxproj", "{7483A571-22B2-4F31-9DA8-93792FDD11CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{F89B9CAF-AAFE-4927-8871-03614B1F5E52}.Release|x64.Build.0 = Release|x64
 		{F89B9CAF-AAFE-4927-8871-03614B1F5E52}.Release|x86.ActiveCfg = Release|Win32
 		{F89B9CAF-AAFE-4927-8871-03614B1F5E52}.Release|x86.Build.0 = Release|Win32
+		{7483A571-22B2-4F31-9DA8-93792FDD11CC}.Debug|x64.ActiveCfg = Debug|x64
+		{7483A571-22B2-4F31-9DA8-93792FDD11CC}.Debug|x64.Build.0 = Debug|x64
+		{7483A571-22B2-4F31-9DA8-93792FDD11CC}.Debug|x86.ActiveCfg = Debug|Win32
+		{7483A571-22B2-4F31-9DA8-93792FDD11CC}.Debug|x86.Build.0 = Debug|Win32
+		{7483A571-22B2-4F31-9DA8-93792FDD11CC}.Release|x64.ActiveCfg = Release|x64
+		{7483A571-22B2-4F31-9DA8-93792FDD11CC}.Release|x64.Build.0 = Release|x64
+		{7483A571-22B2-4F31-9DA8-93792FDD11CC}.Release|x86.ActiveCfg = Release|Win32
+		{7483A571-22B2-4F31-9DA8-93792FDD11CC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
