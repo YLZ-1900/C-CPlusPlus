@@ -1,5 +1,8 @@
 # Prerequisites
 *.d
+*x64
+*.vs
+*.idea
 
 # Compiled Object files
 *.slo

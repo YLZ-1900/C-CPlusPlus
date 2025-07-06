@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="OverrideMaincpp.cpp">
+    <ClCompile Include="OverrideMain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
