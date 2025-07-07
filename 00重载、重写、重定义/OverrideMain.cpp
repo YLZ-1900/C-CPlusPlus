@@ -6,8 +6,7 @@ using namespace std;
 #define API_Override
 #define GENERATED_BODY_Override
 
-// 函数重载
-
+// 函数重载 -- 同一作用域下：函数名相同、形参列表不同、返回值的类型不会影响重载
 void Print(int In_Num)
 {
 	printf("In_Num = %d\n", In_Num);
@@ -23,8 +22,7 @@ void Print(string In_Num)
 	printf("In_Num = %s\n", In_Num.c_str());
 }
 
-// 函数重写
-
+// 函数重写（覆盖）、函数重定义（隐藏）
 class API_Override Object
 {
 	GENERATED_BODY_Override
@@ -44,11 +42,12 @@ void Object::ObjectPrint()
 	printf("调用基类函数：Object::ObjectPrint()\n");
 }
 
+#pragma region 重写、重定义
 class API_Override AActor :public Object
 {
 	GENERATED_BODY_Override
 public:
-	AActor(){}
+	AActor() {}
 
 	// 重写
 	virtual void ObjectPrint() override
@@ -62,8 +61,10 @@ public:
 		printf("通过派生类(AActor)生成物体\n");
 	}
 };
+#pragma endregion
 
-// 函数重定义
+// 函数重写（覆盖） -- 发生在不同作用域下、函数返回类型、方法名、参数列表完全相同、基类中必须是virtual关键字声明
+// 函数重定义（隐藏） -- 发生在不同作用域下、函数名相同、返回值可以不同、形参列表不同、形参列表相同，但是没有使用virtual关键字声明
 
 class API_Override UActorComponent :public Object
 {
@@ -81,6 +82,11 @@ public:
 	void GeneratedObject()
 	{
 		printf("通过派生类(UActorComponent)生成物体\n");
+	}
+
+	virtual void  GeneratedObject(int In_Num)
+	{
+		printf("通过派生类(UActorComponent)生成物体: In_Num = %d\n", In_Num);
 	}
 };
 
